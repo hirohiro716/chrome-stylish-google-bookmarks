@@ -1,0 +1,22 @@
+{
+    "name": "Stylish Google Bookmarks",
+    "manifest_version": 2,
+    "version": "1.0",
+    "description": "スタイリッシュに「Google Bookmarks」を表示する。",
+    "icons": {
+        "128":"icon128.png",
+        "48":"icon48.png",
+        "32":"icon32.png",
+        "16":"icon16.png"
+    },
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com/; object-src 'self'",
+    "permissions": [
+        "tabs",
+        "<all_urls>"
+    ],
+    "browser_action": {
+        "default_title": "Google Bookmarks",
+        "default_popup": "popup.html"
+    }
+}
+
