@@ -19,7 +19,7 @@ $(function() {
             list.css("height", "100%");
             
             createLists();
-            
+
             function createLists() {
                 
                 base.css("box-sizing", "border-box");
@@ -65,7 +65,7 @@ $(function() {
                                 labelTitleDiv.attr("title", labelText);
                                 labelTitleDiv.attr("class", "label_title");
                                 labelTitleDiv.css("width", "100%");
-                                labelTitleDiv.css("margin", "20px 0");
+                                labelTitleDiv.css("padding", "1em 0");
                                 labelTitleDiv.css("cursor", "pointer");
                                 list.append(labelTitleDiv);
                                 setHoverEvent(labelTitleDiv);
@@ -87,7 +87,7 @@ $(function() {
                     var url = bookmark.find("url").text();
                     var item = $("<div></div>");
                     item.css("width", "100%");
-                    item.css("margin", "20px 0");
+                    item.css("padding", "1em 0");
                     item.css("cursor", "pointer");
                     item.bind("click", function() {
                         navigate(url);
