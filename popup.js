@@ -152,7 +152,6 @@ $(function() {
                 chrome.tabs.getSelected(window.id, function (tab) {
                     chrome.tabs.executeScript(tab.id, {code: "location.href = '" + url + "'"});
                 });
-                close();
             }
             
             function setHoverEvent(element) {
